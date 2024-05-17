@@ -38,5 +38,5 @@ class TestAccessNestedMap(unittest.TestCase):
             exception: Exception,
             ) -> None:
         """Tests `access_nested_map`'s exception raising."""
-        with self.assertRaises(exception):
+        with self.assertRaises(KeyError):
             access_nested_map(nested_map, path)
