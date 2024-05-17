@@ -14,9 +14,9 @@ class TestAccessNestedMap(unittest.TestCase):
     """Tests the `access_nested_map` function"""
 
     @parameterized.expand([
-            ({"a": 1}, ("a",), 1),
-            ({"a": {"b": 2}}, ("a",), {"b": 2}),
-            ({"a": {"b": 2}}, ("a", "b"), 2),
+        ({"a": 1}, ("a",), 1),
+        ({"a": {"b": 2}}, ("a",), {"b": 2}),
+        ({"a": {"b": 2}}, ("a", "b"), 2),
     ])
     def test_access_nested_map(
             self,
